@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-blue-600 text-white">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold">Pharmacy</h1>
+      <nav class="space-x-6">
+        <a href="#" class="hover:text-blue-200">Home</a>
+        <a href="#products" class="hover:text-blue-200">Products</a>
+        <a href="#contact" class="hover:text-blue-200">Contact</a>
+        <a href="#cart" class="hover:text-blue-200">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-100 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Our Pharmacy</h2>
+    <p class="text-lg text-gray-700">Your one-stop solution for all your healthcare needs.</p>
+    <button class="mt-6 bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700">Shop Now</button>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="container mx-auto py-12 px-6">
+    <h3 class="text-2xl font-bold mb-6">Our Products</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Product Card -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="lab.jpg" alt="Product Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-lg font-bold">Product Name</h4>
+          <p class="text-gray-700">$25.00</p>
+          <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Repeat similar cards for more products -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-100 py-12">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+      <form class="max-w-md mx-auto">
+        <input type="text" placeholder="Your Name" class="w-full mb-4 p-2 border border-gray-300 rounded">
+        <input type="email" placeholder="Your Email" class="w-full mb-4 p-2 border border-gray-300 rounded">
+        <textarea placeholder="Your Message" class="w-full mb-4 p-2 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Pharmacy. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
